@@ -1,0 +1,416 @@
+{
+	"info": {
+		"_postman_id": "9bf9a594-7178-4e12-9a29-a188eacac5ed",
+		"name": "edwiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Medium",
+								"value": "{{web_medium}}",
+								"type": "text"
+							},
+							{
+								"key": "Portal",
+								"value": "{{actuarial_portal}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/students/students/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"students",
+								"students",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retrive",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Medium",
+								"value": "{{web_medium}}",
+								"type": "text"
+							},
+							{
+								"key": "Portal",
+								"value": "{{actuarial_portal}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/students/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"students",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Medium",
+								"value": "{{web_medium}}",
+								"type": "text"
+							},
+							{
+								"key": "Portal",
+								"value": "{{actuarial_portal}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ST4\",\r\n    \"enrolled_courses\" : [1,2]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/students/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"students",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Medium",
+								"value": "{{web_medium}}",
+								"type": "text"
+							},
+							{
+								"key": "Portal",
+								"value": "{{actuarial_portal}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Galaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/students/3/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"students",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Medium",
+								"value": "{{web_medium}}",
+								"type": "text"
+							},
+							{
+								"key": "Portal",
+								"value": "{{actuarial_portal}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/students/3/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"students",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Medium",
+								"value": "{{web_medium}}",
+								"type": "text"
+							},
+							{
+								"key": "Portal",
+								"value": "{{actuarial_portal}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/courses/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"courses",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retrive",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Medium",
+								"value": "{{web_medium}}",
+								"type": "text"
+							},
+							{
+								"key": "Portal",
+								"value": "{{actuarial_portal}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/courses/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"courses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Medium",
+								"value": "{{web_medium}}",
+								"type": "text"
+							},
+							{
+								"key": "Portal",
+								"value": "{{actuarial_portal}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"course_name\": \"Couse1\",\r\n    \"source\" : \"Test Course\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/courses/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"courses",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Medium",
+								"value": "{{web_medium}}",
+								"type": "text"
+							},
+							{
+								"key": "Portal",
+								"value": "{{actuarial_portal}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"course_name\": \"Couse1\",\r\n    \"source\" : \"Test Course\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/courses/4/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"courses",
+								"4",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Medium",
+								"value": "{{web_medium}}",
+								"type": "text"
+							},
+							{
+								"key": "Portal",
+								"value": "{{actuarial_portal}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/courses/4/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"courses",
+								"4",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

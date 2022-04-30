@@ -1,0 +1,41 @@
+{
+    "students":[
+        {
+            "id": "1",
+            "name": "Ihsan",
+            "enrolled_courses": [
+                {
+                    "id": 1,
+                    "course_name": "Python",
+                    "source": "Udemy"
+                },
+                {
+                    "id": 2,
+                    "course_name": "Jenkins Jira Integration",
+                    "source": "Youtube"
+                },
+                {
+                    "id": 3,
+                    "course_name": "AWS Devops",
+                    "source": "AWS Docs"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Moiz",
+            "enrolled_courses": [
+                {
+                    "id": 2,
+                    "course_name": "React JS",
+                    "source": "Youtube"
+                },
+                {
+                    "id": 4,
+                    "course_name": "Project Management",
+                    "source": "Coursera"
+                }
+            ]
+        }
+    ]
+}
